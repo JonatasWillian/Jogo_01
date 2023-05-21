@@ -1,0 +1,90 @@
+{
+    "name": "Inputs",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "8b90ad4a-4b83-42f3-9ded-2c6d07bc90aa",
+            "actions": [
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "d9c3d662-1ce5-4fe6-b1b9-fc54fab70b50",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "AbilityShoot_1",
+                    "type": "Button",
+                    "id": "78e2fad8-85e9-4706-9bfb-c677cba234cc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "AbilityShoot_2",
+                    "type": "Button",
+                    "id": "501ecc9e-da20-47b7-be1f-198cea34ebda",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "AbilityShoot_3",
+                    "type": "Button",
+                    "id": "a36ac4ec-8a77-4868-b7ba-d526c32206a4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "83535a4b-d279-4f51-bad0-6cbbdedddfcb",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "344753cf-8ee1-441c-ada5-48d723f241f2",
+                    "path": "<Keyboard>/numpad1",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AbilityShoot_1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "84be109f-3e03-4b24-bb77-44fc80b7ce47",
+                    "path": "<Keyboard>/numpad2",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AbilityShoot_2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c9d11459-7a36-4227-bbf5-d1d54981b924",
+                    "path": "<Keyboard>/numpad3",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AbilityShoot_3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

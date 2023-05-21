@@ -1,0 +1,44 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using NaughtyAttributes;
+
+namespace Ebac.StateMachine
+{
+    public class StateMachine<T> where T : System.Enum
+    {
+        public Dictionary<T, StateBase> dictionaryStates;
+
+        private StateBase _currentState;
+        public float timeStartGame = 1f;
+
+        public StateBase CurrentState
+        {
+            get { return _currentState; }
+        }
+
+        public void Init()
+        {
+            dictionaryStates = new Dictionary<T, StateBase>();
+        }
+
+        public void RegisterStates(T typeEnum, StateBase state)
+        {
+            dictionaryStates.Add(typeEnum, state);
+        }
+
+        public void SwitchState(T states, params object[] objs)
+        {
+            if (_currentState != null) _currentState.OnStateExit();
+
+            _currentState = dictionaryStates[states];
+
+            _currentState.OnStateEnter(objs);
+        }
+
+        public void Update()
+        {
+            if (_currentState != null) _currentState.OnStateStay();
+        }
+    }
+}
